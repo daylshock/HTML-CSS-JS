@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экономические новости | Новости дня</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Новости дня</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="news.html">Главная</a></li>
+                    <li><a href="politics.html">Политика</a></li>
+                    <li><a href="economy.html" class="active">Экономика</a></li>
+                    <li><a href="technology.html">Технологии</a></li>
+                    
+                </ul>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="category-header">
+            <h1>Экономические новости</h1>
+            <p class="category-description">Актуальная информация о рынках, финансах и бизнесе</p>
+            <div class="economic-indicators">
+                <div class="indicator">
+                    <span class="indicator-label">Курс USD:</span>
+                    <span class="indicator-value" id="usdRate">...</span>
+                </div>
+                <div class="indicator">
+                    <span class="indicator-label">Курс EUR:</span>
+                    <span class="indicator-value" id="eurRate">...</span>
+                </div>
+                <div class="indicator">
+                    <span class="indicator-label">Нефть Brent:</span>
+                    <span class="indicator-value" id="oilPrice">...</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-news">
+            <article class="featured-article">
+                <img src="https://via.placeholder.com/800x400" alt="Главная экономическая новость" class="featured-image">
+                <div class="featured-content">
+                    <h2>Центробанк изменил ключевую ставку</h2>
+                    <p class="excerpt">Решение повлияет на кредиты и депозиты в коммерческих банках. Эксперты прогнозируют...</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-grid">
+            <h2>Финансовые рынки и бизнес</h2>
+            <div class="news-container" id="newsContainer">
+                <!-- Экономические новости будут загружены через JavaScript -->
+            </div>
+            <button class="load-more" id="loadMore">Загрузить еще</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Новости дня. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-economy.js"></script>
+</body>
+</html>

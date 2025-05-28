@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости дня</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Новости дня</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="news.html" class="active">Главная</a></li>
+                    <li><a href="politics.html">Политика</a></li>
+                    <li><a href="economy.html">Экономика</a></li>
+                    <li><a href="technology.html">Технологии</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="featured-news">
+            <article class="featured-article">
+                <img src="https://via.placeholder.com/800x400" alt="Главная новость" class="featured-image">
+                <div class="featured-content">
+                    <h1>Заголовок главной новости</h1>
+                    <p class="excerpt">Краткое описание главной новости дня, которое заинтересует читателей и побудит их прочитать полную версию статьи.</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-grid">
+            <h2>Последние новости</h2>
+            <div class="news-container" id="newsContainer">
+                <!-- Новости будут загружены через JavaScript -->
+            </div>
+            <button class="load-more" id="loadMore">Загрузить еще</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Новости дня. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политические новости | Новости дня</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Новости дня</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="news.html">Главная</a></li>
+                    <li><a href="politics.html" class="active">Политика</a></li>
+                    <li><a href="economy.html">Экономика</a></li>
+                    <li><a href="technology.html">Технологии</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="category-header">
+            <h1>Политические новости</h1>
+            <p class="category-description">Самые свежие и важные события в мире политики</p>
+        </section>
+
+        <section class="featured-news">
+            <article class="featured-article">
+                <img src="https://via.placeholder.com/800x400" alt="Главная политическая новость" class="featured-image">
+                <div class="featured-content">
+                    <h2>Президент подписал новый закон о социальной поддержке</h2>
+                    <p class="excerpt">Закон предусматривает увеличение пособий и расширение категорий получателей социальной помощи.</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-grid">
+            <h2>Последние политические события</h2>
+            <div class="news-container" id="newsContainer">
+                <!-- Политические новости будут загружены через JavaScript -->
+            </div>
+            <button class="load-more" id="loadMore">Загрузить еще</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Новости дня. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-politics.js"></script>
+</body>
+</html>
